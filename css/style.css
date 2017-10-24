@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,800&subset=latin-ext');
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin-ext');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+}
+
+h1,
+p,
+h2,
+h3 {
+    margin: 0;
+}
+
+/*one*/
+
+.hero {
+    background-image: url(../images/bg-apple.jpg);
+    /*    height: 1022px;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+header {
+    background: rgba(0, 0, 0, .7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*        height: 1022px;*/
+    height: 100vh;
+}
+
+
+.name {
+    display: inline-block;
+    border-bottom: 3px solid;
+    border-top: 3px solid;
+    margin-bottom: 26px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.name h1 {
+    font-size: 85px;
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
+}
+
+.hero-content {
+    text-transform: uppercase;
+
+    color: #b1b1b1;
+    text-align: center;
+}
+
+.hero-content p {
+    font-size: 25px;
+}
+
+/*two*/
+
+.about-me {
+    padding-top: 100px;
+    /*        height: 702px;*/
+    padding-bottom: 50px;
+
+}
+
+.my-photo {
+    padding-top: 60px;
+    text-align: center;
+}
+
+.my-photo img {
+    max-width: 100%;
+    border-radius: 50%;
+    height: auto;
+}
+
+.about-me-description {
+    padding-top: 20px;
+}
+
+.about-me-description h2 {
+    line-height: 28px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.about-me-description p {
+    padding-top: 40px;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.about-me-description p:last-of-type {
+    padding-bottom: 40px;
+}
+
+.main-button {
+    border-radius: 3px;
+    border: none;
+    width: 140px;
+    background-color: #ff2b41;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    transition: .3s ease-in-out;
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+
+}
+
+.main-button:hover {
+    color: #fff;
+    background-color: #ff0000;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*three*/
+
+.technologies {
+    margin-top: 40px;
+}
+
+.technologies h1,
+.portfolio h1 {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.technologies h2 {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.tech-container {
+    text-align: center;
+    border-radius: 10px;
+    font-size: 40px;
+    color: #000;
+    margin: 15px auto;
+    cursor: pointer;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    padding: 5px;
+    width: 80px;
+    height: 80px;
+    transition: .3s ease;
+}
+
+.tech-container h3 {
+    font-size: 14px;
+}
+
+.tech-container:hover {
+    transform: scale(1.1);
+}
+
+/*
+.tech-logo-html5,
+.tech-logo-css3,
+.tech-logo-javascript,
+.tech-logo-sass,
+.tech-logo-bootstrap,
+.tech-logo-jquery,
+.tech-logo-git,
+.tech-logo-grunt,
+.tech-logo-npm,
+.tech-logo-angular,
+.tech-logo-nodejs,
+.tech-logo-reactjs {
+    transition: .2s ease;
+}
+*/
+
+/*
+.tech-logo-html5:hover {
+    color: #E54C21;
+}
+
+.tech-logo-css3:hover {
+    color: #1758A7;
+}
+
+.tech-logo-javascript:hover {
+    color: #F0DB4F;
+}
+
+.tech-logo-sass:hover {
+    color: #CD679A;
+
+}
+
+.tech-logo-bootstrap:hover {
+    color: #563D7C;
+}
+
+.tech-logo-jquery:hover {
+    color: #1169AE;
+}
+
+.tech-logo-git:hover {
+    color: #F34F29;
+}
+
+.tech-logo-grunt:hover {
+    color: #FBA919;
+}
+
+.tech-logo-npm:hover {
+    color: #CB3837;
+}
+
+.tech-logo-angular:hover {
+    color: #C3002F;
+}
+
+.tech-logo-nodejs:hover {
+    color: #689F63;
+}
+
+.tech-logo-reactjs:hover {
+    color: #00D8FF;
+}
+*/
+
+.tech-logo-html5 {
+    color: #E54C21;
+}
+
+.tech-logo-css3 {
+    color: #1758A7;
+}
+
+.tech-logo-javascript {
+    color: #F0DB4F;
+}
+
+.tech-logo-sass {
+    color: #CD679A;
+}
+
+.tech-logo-bootstrap {
+    color: #563D7C;
+}
+
+.tech-logo-jquery {
+    color: #1169AE;
+}
+
+.tech-logo-git {
+    color: #F34F29;
+}
+
+.tech-logo-grunt {
+    color: #FBA919;
+}
+
+.tech-logo-npm {
+    color: #CB3837;
+}
+
+.tech-logo-angular {
+    color: #C3002F;
+}
+
+.tech-logo-nodejs {
+    color: #689F63;
+}
+
+.tech-logo-reactjs {
+    color: #00D8FF;
+}
+
+.icon-grunt,
+.icon-nodejs,
+.icon-css3,
+.icon-javascript,
+.icon-html5 {
+    margin-left: 9px;
+}
+
+/*four*/
+
+.portfolio {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.portfolio h1 {
+    padding-bottom: 40px;
+}
+
+.my-work-container {
+    position: relative;
+    margin-bottom: 30px;
+    /*    transition: 1s ease;*/
+}
+
+.my-work {
+    max-width: 100%;
+    overflow: hidden;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .8s ease;
+}
+
+.links {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.my-work-container:hover .overlay {
+    background-color: rgba(0, 0, 0, .7);
+    opacity: 1;
+    cursor: pointer;
+}
+
+.links .fa {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    font-size: 60px;
+    line-height: 60px;
+    color: #fff;
+}
+
+.links .fa-desktop {
+    margin-right: 30px;
+}
+
+
+.links .fa-code {
+    margin-left: 30px
+}
+
+.links p {
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-bottom: 50px;
+}
+
+.links .fa:hover {
+    color: firebrick;
+}
+
+/*footer*/
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer p {
+    /*    text-align: center;*/
+    line-height: 50px;
+    padding: 20px
+}
+
+.socials {
+    padding: 20px 0;
+}
+
+.socials .fa {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 30px;
+    line-height: 50px;
+    background-color: #fff;
+    transition: .5s ease;
+}
+
+.fa-github {
+    color: #24292E;
+}
+
+.fa-github:hover {
+    color: #fff;
+    background-color: #24292E;
+    transform: scale(1.1);
+}
+
+.fa-facebook {
+    color: #3B5CA0;
+}
+
+.fa-facebook:hover {
+    background-color: #3B5CA0;
+    color: #fff;
+    transform: scale(1.1);
+
+}
+
+.fa-linkedin {
+    color: #0077B5;
+}
+
+.fa-linkedin:hover {
+    background-color: #0077B5;
+    color: #fff;
+    transform: scale(1.1);
+
+}
+
+.fa-free-code-camp {
+    color: #006400;
+}
+
+.fa-free-code-camp:hover {
+    color: #fff;
+    background-color: #006400;
+    transform: scale(1.1);
+
+}
+
+.socials ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.socials ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+ul li:last-child {
+    margin-right: 0;
+}
+
+
+/*media queries*/
+
+@media screen and (max-width: 767px) {
+    /*first*/
+    .name h1 {
+        font-size: 30px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    /*second*/
+    .about-me {
+        padding-top: 10px;
+        padding-bottom: 50px;
+
+    }
+    .my-photo {
+        padding-bottom: 60px;
+    }
+
+    .about-me-description {
+        text-align: center;
+    }
+
+    /*three*/
+    .technologies h1,
+    .portfolio h1 {
+        font-size: 28px;
+    }
+
+    .technologies h2 {
+        font-size: 22px;
+    }
+
+    /*four*/
+    .my-work-container {
+        margin-bottom: 10px;
+    }
+
+    .overlay {
+        opacity: 1;
+        background-color: rgba(0, 0, 0, .7);
+
+    }
+
+    .links p {
+        display: none;
+    }
+    .links .fa {
+        width: 40px;
+        height: 40px;
+        font-size: 40px;
+        line-height: 40px;
+        color: firebrick;
+        font-weight: 900;
+    }
+    /*footer*/
+    footer p {
+        padding: 20px
+    }
+
+    .socials {
+        padding: 20px 0;
+    }
+
+
+}

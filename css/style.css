@@ -17,9 +17,9 @@ h3 {
 /*one*/
 
 .hero {
-    background-image: url(../images/bg-apple.jpg);
+    background-image: url(../images/bg-black-mac.jpeg);
     /*    height: 1022px;*/
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -27,7 +27,7 @@ h3 {
 }
 
 header {
-    background: rgba(0, 0, 0, .7);
+    background: rgba(0, 0, 0, .4);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,7 +54,7 @@ header {
 .hero-content {
     text-transform: uppercase;
 
-    color: #b1b1b1;
+    color: #fff;
     text-align: center;
 }
 
@@ -66,9 +66,7 @@ header {
 
 .about-me {
     padding-top: 100px;
-    /*        height: 702px;*/
     padding-bottom: 50px;
-
 }
 
 .my-photo {
@@ -106,7 +104,7 @@ header {
     border-radius: 3px;
     border: none;
     width: 140px;
-    background-color: #ff2b41;
+    background-color: #c0392b;
     padding: 10px 20px;
     font-size: 16px;
     color: #fff;
@@ -114,13 +112,13 @@ header {
     transition: .3s ease-in-out;
     display: inline-block;
     text-align: center;
-    margin: 10px;
+    margin-right: 10px;
 
 }
 
 .main-button:hover {
     color: #fff;
-    background-color: #ff0000;
+    background-color: #e74c3c;
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -150,24 +148,27 @@ header {
 .tech-container {
     text-align: center;
     border-radius: 10px;
-    font-size: 40px;
+    font-size: 60px;
     color: #000;
-    margin: 15px auto;
+    margin: 20px auto;
     cursor: pointer;
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
     padding: 5px;
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
     transition: .3s ease;
 }
 
 .tech-container h3 {
-    font-size: 14px;
+    font-size: 16px;
 }
+
+/*
 
 .tech-container:hover {
     transform: scale(1.1);
 }
+*/
 
 /*
 .tech-logo-html5,
@@ -339,7 +340,7 @@ header {
 }
 
 .my-work-container:hover .overlay {
-    background-color: rgba(0, 0, 0, .7);
+    background-color: rgba(0, 0, 0, .5);
     opacity: 1;
     cursor: pointer;
 }
@@ -348,9 +349,14 @@ header {
     display: inline-block;
     width: 60px;
     height: 60px;
-    font-size: 60px;
+    font-size: 40px;
     line-height: 60px;
     color: #fff;
+    background-color: #c0392b;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+
 }
 
 .links .fa-desktop {
@@ -363,13 +369,14 @@ header {
 }
 
 .links p {
-    text-transform: uppercase;
+    /*    text-transform: uppercase;*/
     font-size: 20px;
     padding-bottom: 50px;
 }
 
 .links .fa:hover {
-    color: firebrick;
+    color: #c0392b;
+    background-color: #fff;
 }
 
 /*footer*/
@@ -398,51 +405,53 @@ footer p {
     border-radius: 50%;
     font-size: 30px;
     line-height: 50px;
-    background-color: #fff;
     transition: .5s ease;
 }
 
 .fa-github {
     color: #24292E;
+    background-color: #fff;
 }
 
 .fa-github:hover {
     color: #fff;
     background-color: #24292E;
-    transform: scale(1.1);
+    /*        transform: scale(1.1);*/
 }
 
 .fa-facebook {
     color: #3B5CA0;
+    background-color: #fff;
+
 }
 
 .fa-facebook:hover {
     background-color: #3B5CA0;
     color: #fff;
-    transform: scale(1.1);
-
+    /*    transform: scale(1.1);*/
 }
 
 .fa-linkedin {
     color: #0077B5;
+    background-color: #fff;
 }
 
 .fa-linkedin:hover {
     background-color: #0077B5;
     color: #fff;
-    transform: scale(1.1);
-
+    /*    transform: scale(1.1);*/
 }
 
 .fa-free-code-camp {
     color: #006400;
+    background-color: #fff;
+
 }
 
 .fa-free-code-camp:hover {
     color: #fff;
     background-color: #006400;
-    transform: scale(1.1);
-
+    /*    transform: scale(1.1);*/
 }
 
 .socials ul {
@@ -456,11 +465,9 @@ footer p {
     margin-right: 10px;
 }
 
-
-ul li:last-child {
+.socials ul li:last-child {
     margin-right: 0;
 }
-
 
 /*media queries*/
 
@@ -488,6 +495,10 @@ ul li:last-child {
         text-align: center;
     }
 
+    .main-button {
+        margin: 10px;
+    }
+
     /*three*/
     .technologies h1,
     .portfolio h1 {
@@ -505,7 +516,7 @@ ul li:last-child {
 
     .overlay {
         opacity: 1;
-        background-color: rgba(0, 0, 0, .7);
+        background-color: rgba(0, 0, 0, .5);
 
     }
 
@@ -513,12 +524,29 @@ ul li:last-child {
         display: none;
     }
     .links .fa {
-        width: 40px;
+        /*        display: block;*/
+        width: 140px;
         height: 40px;
-        font-size: 40px;
+        font-size: 30px;
         line-height: 40px;
-        color: firebrick;
-        font-weight: 900;
+        color: #fff;
+        background-color: #c0392b;
+    }
+
+    .links .fa-desktop {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+
+    .links .fa-code {
+        margin-left: 0px;
+        /*        margin-top: 10px;*/
+    }
+
+    .links .fa:hover {
+        color: #fff;
+        background-color: #c0392b;
     }
     /*footer*/
     footer p {
@@ -529,5 +557,25 @@ ul li:last-child {
         padding: 20px 0;
     }
 
+    .fa-github {
+        color: #fff;
+        background-color: #24292E;
+    }
+
+    .fa-facebook {
+        background-color: #3B5CA0;
+        color: #fff;
+    }
+
+
+    .fa-linkedin {
+        background-color: #0077B5;
+        color: #fff;
+    }
+
+    .fa-free-code-camp {
+        color: #fff;
+        background-color: #006400;
+    }
 
 }

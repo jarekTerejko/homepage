@@ -8,10 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!--    <link rel="stylesheet" href="css/font-mfizz-2.4.1/font-mfizz-2.4.1/font-mfizz.css">-->
@@ -20,7 +18,31 @@
 </head>
 
 <body>
-    <section class="hero">
+    <div id="nav-icon">
+        <span><i class="fa fa-bars"></i></span>
+    </div>
+    <div class="left-menu">
+        <ul>
+            <li>
+                <a href="#about-me">O mnie</a>
+            </li>
+            <li>
+                <hr>
+            </li>
+            <li>
+                <a href="#technology">Technologie</a>
+            </li>
+            <li>
+                <hr>
+            </li>
+            <li>
+                <a href="#portfolio">Portfolio</a>
+            </li>
+        </ul>
+        <span class="sliiider-exit exit left-exit">&#215;</span>
+    </div>
+    <a href="#hero"><button id="top-btn" class="btn-top" title="Do góry"><span><i class="fa fa-angle-up"></i></span></button></a>
+    <section class="hero" id="hero">
         <header>
             <div class="container">
                 <div class="row">
@@ -34,34 +56,46 @@
             </div>
         </header>
     </section>
-    <section>
+    <section id="about-me">
         <div class="about-me">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-3 col-md-3 col-lg-3">
+                    <div class="col-sm-4 col-md-4 col-lg-4">
                         <div class="my-photo">
-                            <img src="http://via.placeholder.com/150x150" alt="Jarosław Terejko Junior Front-End Developer" title="Jarosław Terejko">
+                            <img src="/images/Jaros%C5%82aw%20Terejko.jpg" alt="Jarosław Terejko Junior Front-End Developer" title="Jarosław Terejko">
+                        </div>
+                        <div class="contact">
+                            <button class="contact-button" id="contact-btn">Kontakt</button>
+                            <div class="contact-content">
+                                <h1>Jarosław Terejko</h1>
+                                <h2>Front-end Developer</h2>
+                                <p><i class="fa fa-home" aria-hidden="true"></i>Warszawa</p>
+                                <p><i class="fa fa-phone" aria-hidden="true"></i>884-607-342</p>
+                                <p><i class="fa fa-envelope" aria-hidden="true"></i>j.terejko@gmail.com</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-9 col-md-9 col-lg-9">
+                    <div class="col-sm-8 col-md-8 col-lg-8">
                         <div class="about-me-description">
-                            <h2>Witaj, nazywam się Jarosław Terejko i jestem początkującym junior Front-End Developerem</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquipex ea commodo consequat.</p>
-                            <p>Duis autem vel eum iriure dolorin hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore.</p>
+                            <h2>Witaj, nazywam się Jarosław Terejko i jestem początkującym Junior Front-end Developerem</h2>
+                            <p>Swoje pierwsze "Hello World" popełniłem w połowie 2017 roku i od tamtego czasu systematycznie, małymi krokami, w domowym zaciszu zacząłem zgłębiać tajniki tworzenia front-endu.</p>
+                            <p>Warstwę wizualną aplikacji koduję zgodnie z najnowszych standardami <span>HTML5</span> oraz <span>CSS3</span>. Znajomość podstaw <span>JavaScript</span> i <span>jQuery</span> pozwala mi dodawać inteaktywność do moich projektów, co zwiększa aktrykcyjność tworzenego UI oraz UX.</p>
+                            <p>Znam i praktycznie wykorzystuję <span>Bootstrap</span>, najpopularniejszy framework CSS. Nie jest mi również obca koncepcja kontroli wersji, którą w praktyce stosuję przy pomocy <span>Git</span>. Automatyzację powtarzalnych zadań powierzam task runnerowi <span>Grunt</span>.</p>
                             <a href="#"><button type="button" class="main-button">CV</button></a>
-                            <a href="#"><button type="button" class="main-button">Certyfikat</button></a>
+                            <a href="https://drive.google.com/open?id=0B0Pflt7vZROBWVNYZjBuQW1Xbm43QzRDbl9MOWl0RTdlWTFR" target="_blank"><button type="button" class="main-button">Zaświadczenie</button></a>
+                            <a href="https://drive.google.com/open?id=0B0Pflt7vZROBZFV5dTQ1WGZsWkxfMTRhSUN6MXZxYnM2Vkk0" target="_blank"><button type="button" class="main-button">Certyfikat</button></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section>
+    <section id="technology">
         <div class="technologies">
             <div class="container">
                 <div class="row">
                     <h1>Technologie wykorzystywane<br> w moich projektach</h1>
-                    <h2>Front-End</h2>
+                    <h2>Front-end</h2>
                 </div>
                 <div class="row">
                     <div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-sm-2 col-md-2 col-lg-2">
@@ -179,7 +213,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="portfolio">
         <div class="portfolio">
             <div class="container">
                 <div class="row">
@@ -188,7 +222,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="my-work-container">
-                            <img src="images/jarekterejko.github.io-site1-.jpg" alt="projekt" title="projekt" class="my-work" >
+                            <img src="images/jarekterejko.github.io-site1-.jpg" alt="projekt" title="projekt" class="my-work">
                             <div class="overlay">
                                 <div class="links">
                                     <p>Zakodowany layout na podstawie pliku PSD</p>
@@ -301,32 +335,21 @@
     <footer>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-12">
+                    <p>&copy; Jarosław Terejko 2017</p>
                     <div class="socials">
                         <ul>
                             <li><a href="https://github.com/jarekTerejko" target="_blank"><i class="fa fa-github" target="_blank" ></i></a></li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <!--                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
                             <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-free-code-camp"></i></a></li>
+                            <!--                            <li><a href="#"><i class="fa fa-free-code-camp"></i></a></li>-->
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <p>&copy; Jarosław Terejko 2017</p>
-                </div>
-
-                <!--<div class="col-md-6">
-                    <div class="socials">
-                        <i class="fa fa-github"></i>
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                        <i class="fa fa-linkedin"></i>
-                        <i class="fa fa-free-code-camp"></i>
-                    </div>
-                </div>-->
-
             </div>
         </div>
     </footer>
+    <script src="js/sliiide.min.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
 </body>
 

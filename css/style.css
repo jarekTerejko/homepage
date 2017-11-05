@@ -200,6 +200,7 @@ header {
     display: inline-block;
     text-align: center;
     margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .main-button:hover {

@@ -158,7 +158,7 @@ header {
 }
 
 .my-photo img {
-    max-width: 100%;
+    max-width: 80%;
     border-radius: 50%;
     height: auto;
 }
@@ -620,6 +620,10 @@ footer p {
     }
     .my-photo {
         padding-bottom: 30px;
+    }
+    
+    .my-photo img {
+        max-width: 40%;
     }
 
     .about-me-description {

@@ -12,216 +12,238 @@
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
     <!--    <link rel="stylesheet" href="css/font-mfizz-2.4.1/font-mfizz-2.4.1/font-mfizz.css">-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css">
+
+    <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">-->
+    <!--    jQuery.scrollTo   -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div id="nav-icon">
-        <span><i class="fa fa-bars"></i></span>
-    </div>
-    <div class="left-menu">
+    <span class="open-bars" id="open-menu"><i class="fa fa-bars"></i></span>
+    <a href="#start" id="btn-top" class="btn-top"><i class="fa fa-angle-up"></i></a>
+    <nav class="left-menu" id="left-menu">
+        <span id="close-menu" class="exit"><i class="fa fa-times"></i>
+</span>
         <ul>
             <li>
-                <a href="#about-me">O mnie</a>
+                <hr>
+            </li>
+            <li>
+                <a href="#start" id="link-00">Start</a>
             </li>
             <li>
                 <hr>
             </li>
             <li>
-                <a href="#technology">Technologie</a>
+                <a href="#about-me" id="link-01">O mnie</a>
             </li>
             <li>
                 <hr>
             </li>
             <li>
-                <a href="#portfolio">Portfolio</a>
+                <a href="#technology" id="link-02">Technologie</a>
+            </li>
+            <li>
+                <hr>
+            </li>
+            <li>
+                <a href="#portfolio" id="link-03">Portfolio</a>
+            </li>
+            <li>
+                <hr>
             </li>
         </ul>
-        <span class="sliiider-exit exit left-exit">&#215;</span>
-    </div>
-    <a href="#hero"><button id="top-btn" class="btn-top" title="Do góry"><span><i class="fa fa-angle-up"></i></span></button></a>
-    <section class="hero" id="hero">
-        <header>
-            <div class="container">
-                <div class="row">
-                    <div class="hero-content">
-                        <div class="name">
-                            <h1>Jarosław Terejko</h1>
+    </nav>
+    <main id="slide-main">
+        <section class="hero" id="start">
+            <header>
+                <div class="container">
+                    <div class="row">
+                        <div class="hero-content">
+                            <div class="name">
+                                <h1>Jarosław<br> Terejko</h1>
+                            </div>
+                            <p>Junior front-end developer</p>
                         </div>
-                        <p>Junior front-end developer</p>
                     </div>
                 </div>
-            </div>
-        </header>
-    </section>
-    <section id="about-me">
-        <div class="about-me">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-4 col-md-4 col-lg-4">
-                        <div class="my-photo">
-                            <img src="images/Jaros%C5%82aw%20Terejko.jpg" alt="Jarosław Terejko Junior Front-End Developer" title="Jarosław Terejko">
-                        </div>
-                        <div class="contact">
+            </header>
+        </section>
+        <section>
+        </section>
+        <section id="about-me">
+            <div class="about-me">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-4 col-lg-4">
+                            <div class="my-photo">
+                                <img src="images/Jaros%C5%82aw%20Terejko.jpg" alt="Jarosław Terejko Junior Front-End Developer" title="Jarosław Terejko">
+                            </div>
                             <button class="contact-button" id="contact-btn">Kontakt</button>
-                            <div class="contact-content">
-                                <h1>Jarosław Terejko</h1>
-                                <h2>Front-end Developer</h2>
-                                <p><i class="fa fa-home" aria-hidden="true"></i>Warszawa</p>
-                                <p><i class="fa fa-phone" aria-hidden="true"></i>884-607-342</p>
-                                <p><i class="fa fa-envelope" aria-hidden="true"></i>j.terejko@gmail.com</p>
+                            <div class="my-modal" id="mySimpleModal">
+                                <div class="my-modal-content">
+                                    <span class="closeBtn">&times;</span>
+                                    <h1>Jarosław Terejko</h1>
+                                    <h3>Front-end Developer</h3>
+                                    <p><i class="fa fa-home" aria-hidden="true"></i>Warszawa</p>
+                                    <p><a href="tel:+48884607342"><i class="fa fa-phone" aria-hidden="true"></i>884-607-342</a></p>
+                                    <p><a href="mailto:j.terejko@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>j.terejko@gmail.com</a></p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-sm-8 col-md-8 col-lg-8">
-                        <div class="about-me-description">
-                            <h2>Witaj, nazywam się Jarosław Terejko i jestem początkującym Junior Front-end Developerem</h2>
-                            <p>Swoje pierwsze "Hello World" popełniłem w połowie 2017 roku i od tamtego czasu systematycznie, małymi krokami, w domowym zaciszu zacząłem zgłębiać tajniki tworzenia front-endu.</p>
-                            <p>Warstwę wizualną aplikacji koduję zgodnie z najnowszych standardami <span>HTML5</span> oraz <span>CSS3</span>. Znajomość podstaw <span>JavaScript</span> i <span>jQuery</span> pozwala mi dodawać inteaktywność do moich projektów, co zwiększa aktrykcyjność tworzenego UI oraz UX.</p>
-                            <p>Znam i praktycznie wykorzystuję <span>Bootstrap</span>, najpopularniejszy framework CSS. Nie jest mi również obca koncepcja kontroli wersji, którą w praktyce stosuję przy pomocy <span>Git</span>. Automatyzację powtarzalnych zadań powierzam task runnerowi <span>Grunt</span>.</p>
-                            <a href="#"><button type="button" class="main-button">CV</button></a>
-                            <a href="https://drive.google.com/open?id=0B0Pflt7vZROBWVNYZjBuQW1Xbm43QzRDbl9MOWl0RTdlWTFR" target="_blank"><button type="button" class="main-button">Zaświadczenie</button></a>
-                            <a href="https://drive.google.com/open?id=0B0Pflt7vZROBZFV5dTQ1WGZsWkxfMTRhSUN6MXZxYnM2Vkk0" target="_blank"><button type="button" class="main-button">Certyfikat</button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="technology">
-        <div class="technologies">
-            <div class="container">
-                <div class="row">
-                    <h1>Technologie wykorzystywane<br> w moich projektach</h1>
-                    <h2>Front-end</h2>
-                </div>
-                <div class="row">
-                    <div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-sm-2 col-md-2 col-lg-2">
-                        <div class="tech-container">
-                            <div class="tech-logo-html5">
-                                <i class="icon-html5"></i>
-                                <h3>HTML5</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-2 col-md-2 col-lg-2">
-                        <div class="tech-container">
-                            <div class="tech-logo-css3">
-                                <i class="icon-css3"></i>
-                                <h3>CSS3</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-2 col-md-2 col-lg-2">
-                        <div class="tech-container">
-                            <div class="tech-logo-javascript">
-                                <i class="icon-javascript"></i>
-                                <h3>JavaScript</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-2 col-md-2 col-lg-2">
-                        <div class="tech-container">
-                            <div class="tech-logo-sass">
-                                <i class="icon-sass"></i>
-                                <h3>Sass</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <h2>Narzędzia</h2>
-                </div>
-                <div class="row">
-                    <div class="col-sm-offset-3 col-md-offset-3 col-lg-offset-3 col-sm-2 col-md-2">
-                        <div class="tech-container">
-                            <div class="tech-logo-git">
-                                <i class="icon-git"></i>
-                                <h3>Git</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-2 col-md-2">
-                        <div class="tech-container">
-                            <div class="tech-logo-grunt">
-                                <i class="icon-grunt"></i>
-                                <h3>Grunt</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-2 col-md-2">
-                        <div class="tech-container">
-                            <div class="tech-logo-npm">
-                                <i class="icon-npm"></i>
-                                <h3>npm</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <h2>Frameworki i biblioteki</h2>
-                </div>
-                <div class="row">
-                    <div class="col-sm-offset-4 col-md-offset-4 col-lg-offset-4 col-sm-2 col-md-2">
-                        <div class="tech-container">
-                            <div class="tech-logo-bootstrap">
-                                <i class="icon-bootstrap"></i>
-                                <h3>Bootstrap</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-2 col-md-2">
-                        <div class="tech-container">
-                            <div class="tech-logo-jquery">
-                                <i class="icon-jquery"></i>
-                                <h3>jQuery</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <h2>Planuję poznać...</h2>
-                </div>
-                <div class="row">
-                    <div class="col-sm-offset-3 col-md-offset-3 col-lg-offset-3 col-sm-2 col-md-2">
-                        <div class="tech-container">
-                            <div class="tech-logo-angular">
-                                <i class="icon-angular"></i>
-                                <h3>Angular 4</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-2 col-md-2">
-                        <div class="tech-container">
-                            <div class="tech-logo-reactjs">
-                                <i class="icon-reactjs"></i>
-                                <h3>React JS</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-2 col-md-2">
-                        <div class="tech-container">
-                            <div class="tech-logo-nodejs">
-                                <i class="icon-nodejs"></i>
-                                <h3>Node JS</h3>
+                        <div class="col-sm-8 col-md-8 col-lg-8">
+                            <div class="about-me-description">
+                                <h2>Witaj, nazywam się Jarosław Terejko i jestem początkującym Junior Front-end Developerem</h2>
+                                <p>Swoje pierwsze "Hello World" popełniłem w połowie 2017 roku i od tamtego czasu systematycznie, małymi krokami, w domowym zaciszu zacząłem zgłębiać tajniki tworzenia front-endu.</p>
+                                <p>Warstwę wizualną aplikacji koduję zgodnie z najnowszych standardami <strong>HTML5</strong> oraz <strong>CSS3</strong>. Znajomość podstaw <strong>JavaScript</strong> i <strong>jQuery</strong> pozwala mi dodawać inteaktywność do moich projektów, co zwiększa aktrykcyjność tworzenego UI oraz UX.</p>
+                                <p>Znam i praktycznie wykorzystuję <strong>Bootstrap</strong>, najpopularniejszy framework CSS. Nie jest mi również obca koncepcja kontroli wersji, którą w praktyce stosuję przy pomocy <strong>Git</strong>. Automatyzację powtarzalnych zadań powierzam task runnerowi <strong>Grunt</strong>.</p>
+                                <div class="main-buttons">
+                                    <a href="#" class="main-button">CV</a>
+                                    <a href="https://drive.google.com/open?id=0B0Pflt7vZROBWVNYZjBuQW1Xbm43QzRDbl9MOWl0RTdlWTFR" target="_blank" class="main-button">Zaświadczenie</a>
+                                    <a href="https://drive.google.com/open?id=0B0Pflt7vZROBZFV5dTQ1WGZsWkxfMTRhSUN6MXZxYnM2Vkk0" target="_blank" class="main-button">Certyfikat</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="portfolio">
-        <div class="portfolio">
-            <div class="container">
-                <div class="row">
-                    <h1>Portfolio</h1>
+        </section>
+        <section id="technology">
+            <div class="technologies">
+                <div class="container">
+                    <div class="row">
+                        <h1>Technologie wykorzystywane<br> w moich projektach</h1>
+                        <h2>Front-end</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-sm-2 col-md-2 col-lg-2">
+                            <div class="tech-container">
+                                <div class="tech-logo-html5">
+                                    <i class="icon-html5"></i>
+                                    <h3>HTML5</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 col-md-2 col-lg-2">
+                            <div class="tech-container">
+                                <div class="tech-logo-css3">
+                                    <i class="icon-css3"></i>
+                                    <h3>CSS3</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 col-md-2 col-lg-2">
+                            <div class="tech-container">
+                                <div class="tech-logo-javascript">
+                                    <i class="icon-javascript"></i>
+                                    <h3>JavaScript</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 col-md-2 col-lg-2">
+                            <div class="tech-container">
+                                <div class="tech-logo-sass">
+                                    <i class="icon-sass"></i>
+                                    <h3>Sass</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h2>Narzędzia</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-offset-3 col-md-offset-3 col-lg-offset-3 col-sm-2 col-md-2">
+                            <div class="tech-container">
+                                <div class="tech-logo-git">
+                                    <i class="icon-git"></i>
+                                    <h3>Git</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 col-md-2">
+                            <div class="tech-container">
+                                <div class="tech-logo-grunt">
+                                    <i class="icon-grunt"></i>
+                                    <h3>Grunt</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 col-md-2">
+                            <div class="tech-container">
+                                <div class="tech-logo-npm">
+                                    <i class="icon-npm"></i>
+                                    <h3>npm</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h2>Frameworki i biblioteki</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-offset-4 col-md-offset-4 col-lg-offset-4 col-sm-2 col-md-2">
+                            <div class="tech-container">
+                                <div class="tech-logo-bootstrap">
+                                    <i class="icon-bootstrap"></i>
+                                    <h3>Bootstrap</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 col-md-2">
+                            <div class="tech-container">
+                                <div class="tech-logo-jquery">
+                                    <i class="icon-jquery"></i>
+                                    <h3>jQuery</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h2>Planuję poznać...</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-offset-3 col-md-offset-3 col-lg-offset-3 col-sm-2 col-md-2">
+                            <div class="tech-container">
+                                <div class="tech-logo-angular">
+                                    <i class="icon-angular"></i>
+                                    <h3>Angular 4</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 col-md-2">
+                            <div class="tech-container">
+                                <div class="tech-logo-reactjs">
+                                    <i class="icon-reactjs"></i>
+                                    <h3>React JS</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 col-md-2">
+                            <div class="tech-container">
+                                <div class="tech-logo-nodejs">
+                                    <i class="icon-nodejs"></i>
+                                    <h3>Node JS</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="row">
-                    <!--
+            </div>
+        </section>
+        <section id="portfolio">
+            <div class="portfolio">
+                <div class="container">
+                    <div class="row">
+                        <h1>Portfolio</h1>
+                    </div>
+                    <div class="row">
+                        <!--
                     <div class="col-md-6">
                         <div class="my-work-container">
                             <img src="images/jarekterejko.github.io-site1-.jpg" alt="projekt" title="projekt" class="my-work">
@@ -235,34 +257,34 @@
                         </div>
                     </div>
 -->
-                    <div class="col-md-6">
-                        <div class="my-work-container">
-                            <img src="images/jarekterejko.github.io-site2-.jpg" alt="projekt" title="projekt" class="my-work">
-                            <div class="overlay">
-                                <div class="links">
-                                    <p>Zakodowany layout na podstawie pliku PSD</p>
-                                    <a href="https://jarekterejko.github.io/site2/" target="_blank"><i class="fa fa-desktop"></i></a>
-                                    <a href="https://github.com/jarekTerejko/site2/" target="_blank"><i class="fa fa-code"></i></a>
+                        <div class="col-md-6">
+                            <div class="my-work-container">
+                                <img src="images/jarekterejko.github.io-site2-.jpg" alt="projekt" title="projekt" class="my-work">
+                                <div class="overlay">
+                                    <div class="links">
+                                        <p>Zakodowany layout na podstawie pliku PSD</p>
+                                        <a href="https://jarekterejko.github.io/site2/" target="_blank"><i class="fa fa-desktop"></i></a>
+                                        <a href="https://github.com/jarekTerejko/site2/" target="_blank"><i class="fa fa-code"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="my-work-container">
+                                <img src="images/jarekterejko.github.io-site4-.jpg" alt="projekt" title="projekt" class="my-work">
+                                <div class="overlay">
+                                    <div class="links">
+                                        <p>Zakodowany layout na podstawie pliku PSD</p>
+                                        <a href="https://jarekterejko.github.io/site4/" target="_blank"><i class="fa fa-desktop"></i></a>
+                                        <a href="https://github.com/jarekTerejko/site4/" target="_blank"><i class="fa fa-code"></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="my-work-container">
-                            <img src="images/jarekterejko.github.io-site4-.jpg" alt="projekt" title="projekt" class="my-work">
-                            <div class="overlay">
-                                <div class="links">
-                                    <p>Zakodowany layout na podstawie pliku PSD</p>
-                                    <a href="https://jarekterejko.github.io/site4/" target="_blank"><i class="fa fa-desktop"></i></a>
-                                    <a href="https://github.com/jarekTerejko/site4/" target="_blank"><i class="fa fa-code"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
+                    <div class="row">
 
-                    <!--
+                        <!--
                     <div class="col-md-6">
                         <div class="my-work-container">
                             <img src="images/jarekterejko.github.io-site3-.jpg" alt="projekt" title="projekt" class="my-work">
@@ -277,119 +299,120 @@
                     </div>
 -->
 
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="my-work-container">
-                            <img src="images/jarekterejko.github.io-Kanban-.jpg" alt="projekt" title="projekt" class="my-work">
-                            <div class="overlay">
-                                <div class="links">
-                                    <p>Tablica Kanban - aplikacja wykorzystująca Ajax i API</p>
-                                    <a href="https://jarekterejko.github.io/Kanban/" target="_blank"><i class="fa fa-desktop"></i></a>
-                                    <a href="https://github.com/jarekTerejko/Kanban" target="_blank"><i class="fa fa-code"></i></a>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="my-work-container">
+                                <img src="images/jarekterejko.github.io-Kanban-.jpg" alt="projekt" title="projekt" class="my-work">
+                                <div class="overlay">
+                                    <div class="links">
+                                        <p>Tablica Kanban - aplikacja wykorzystująca Ajax i API</p>
+                                        <a href="https://jarekterejko.github.io/Kanban/" target="_blank"><i class="fa fa-desktop"></i></a>
+                                        <a href="https://github.com/jarekTerejko/Kanban" target="_blank"><i class="fa fa-code"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="my-work-container">
+                                <img src="images/jarekterejko.github.io-kodilla-9_7-.jpg" alt="projekt" title="projekt" class="my-work">
+                                <div class="overlay">
+                                    <div class="links">
+                                        <p>Papier, kamień, nożyce - gra wykorzystująca podstawy JavaScript</p>
+                                        <a href="https://jarekterejko.github.io/kodilla-9_7/" target="_blank"><i class="fa fa-desktop"></i></a>
+                                        <a href="https://github.com/jarekTerejko/kodilla-9_7" target="_blank"><i class="fa fa-code"></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="my-work-container">
-                            <img src="images/jarekterejko.github.io-kodilla-9_7-.jpg" alt="projekt" title="projekt" class="my-work">
-                            <div class="overlay">
-                                <div class="links">
-                                    <p>Papier, kamień, nożyce - gra wykorzystująca podstawy JavaScript</p>
-                                    <a href="https://jarekterejko.github.io/kodilla-9_7/" target="_blank"><i class="fa fa-desktop"></i></a>
-                                    <a href="https://github.com/jarekTerejko/kodilla-9_7" target="_blank"><i class="fa fa-code"></i></a>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="my-work-container">
+                                <img src="images/jarekterejko.github.io-duzy-lotek-.jpg" alt="projekt" title="projekt" class="my-work">
+                                <div class="overlay">
+                                    <div class="links">
+                                        <p>Duży Lotek - aplikacja losująca 6 szczęśliwych cyfr z wykorzystaniem JavaScipt</p>
+                                        <a href="https://jarekterejko.github.io/duzy-lotek/" target="_blank"><i class="fa fa-desktop"></i></a>
+                                        <a href="https://github.com/jarekTerejko/duzy-lotek" target="_blank"><i class="fa fa-code"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="my-work-container">
+                                <img src="images/jarekterejko.github.io-to-do-app-.jpg" alt="projekt" title="projekt" class="my-work">
+                                <div class="overlay">
+                                    <div class="links">
+                                        <p>Moja lista zadań - aplikacja To-Do wykorzystująca JavaScript </p>
+                                        <a href="https://jarekterejko.github.io/to-do-app/" target="_blank"><i class="fa fa-desktop"></i></a>
+                                        <a href="https://github.com/jarekTerejko/to-do-app" target="_blank"><i class="fa fa-code"></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="my-work-container">
-                            <img src="images/jarekterejko.github.io-duzy-lotek-.jpg" alt="projekt" title="projekt" class="my-work">
-                            <div class="overlay">
-                                <div class="links">
-                                    <p>Duży Lotek - aplikacja losująca 6 szczęśliwych cyfr z wykorzystaniem JavaScipt</p>
-                                    <a href="https://jarekterejko.github.io/duzy-lotek/" target="_blank"><i class="fa fa-desktop"></i></a>
-                                    <a href="https://github.com/jarekTerejko/duzy-lotek" target="_blank"><i class="fa fa-code"></i></a>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="my-work-container">
+                                <img src="images/jarekterejko.github.io_site5_.jpg" alt="projekt" title="projekt" class="my-work">
+                                <div class="overlay">
+                                    <div class="links">
+                                        <p>Zakodowany layout na podstawie pliku PSD</p>
+                                        <a href="https://jarekterejko.github.io/site5/" target="_blank"><i class="fa fa-desktop"></i></a>
+                                        <a href="https://github.com/jarekTerejko/site5/" target="_blank"><i class="fa fa-code"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="my-work-container">
+                                <img src="images/jarekterejko.github.io_site6_.jpg" alt="projekt" title="projekt" class="my-work">
+                                <div class="overlay">
+                                    <div class="links">
+                                        <p>Zakodowany layout na podstawie pliku PSD</p>
+                                        <a href="https://jarekterejko.github.io/site6/" target="_blank"><i class="fa fa-desktop"></i></a>
+                                        <a href="https://github.com/jarekTerejko/site6/" target="_blank"><i class="fa fa-code"></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="my-work-container">
-                            <img src="images/jarekterejko.github.io-to-do-app-.jpg" alt="projekt" title="projekt" class="my-work">
-                            <div class="overlay">
-                                <div class="links">
-                                    <p>Moja lista zadań - aplikacja To-Do wykorzystująca JavaScript </p>
-                                    <a href="https://jarekterejko.github.io/to-do-app/" target="_blank"><i class="fa fa-desktop"></i></a>
-                                    <a href="https://github.com/jarekTerejko/to-do-app" target="_blank"><i class="fa fa-code"></i></a>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="my-work-container">
+                                <img src="images/jarekterejko.github.io_site7_.jpg" alt="projekt" title="projekt" class="my-work">
+                                <div class="overlay">
+                                    <div class="links">
+                                        <p>Zakodowany layout na podstawie pliku PSD</p>
+                                        <a href="https://jarekterejko.github.io/site7/" target="_blank"><i class="fa fa-desktop"></i></a>
+                                        <a href="https://github.com/jarekTerejko/site7/" target="_blank"><i class="fa fa-code"></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="my-work-container">
-                            <img src="images/jarekterejko.github.io_site5_.jpg" alt="projekt" title="projekt" class="my-work">
-                            <div class="overlay">
-                                <div class="links">
-                                    <p>Zakodowany layout na podstawie pliku PSD</p>
-                                    <a href="https://jarekterejko.github.io/site5/" target="_blank"><i class="fa fa-desktop"></i></a>
-                                    <a href="https://github.com/jarekTerejko/site5/" target="_blank"><i class="fa fa-code"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="my-work-container">
-                            <img src="images/jarekterejko.github.io_site6_.jpg" alt="projekt" title="projekt" class="my-work">
-                            <div class="overlay">
-                                <div class="links">
-                                    <p>Zakodowany layout na podstawie pliku PSD</p>
-                                    <a href="https://jarekterejko.github.io/site6/" target="_blank"><i class="fa fa-desktop"></i></a>
-                                    <a href="https://github.com/jarekTerejko/site6/" target="_blank"><i class="fa fa-code"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="my-work-container">
-                            <img src="images/jarekterejko.github.io_site7_.jpg" alt="projekt" title="projekt" class="my-work">
-                            <div class="overlay">
-                                <div class="links">
-                                    <p>Zakodowany layout na podstawie pliku PSD</p>
-                                    <a href="https://jarekterejko.github.io/site7/" target="_blank"><i class="fa fa-desktop"></i></a>
-                                    <a href="https://github.com/jarekTerejko/site7/" target="_blank"><i class="fa fa-code"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="my-work-container">
-                            <img src="images/jarekterejko.github.io_project-pixel-art-maker-starter_.jpg" alt="projekt" title="projekt" class="my-work">
-                            <div class="overlay">
-                                <div class="links">
-                                    <p>Finalny projekt Google Developer Challenge Scholarship</p>
-                                    <a href="https://jarekterejko.github.io/project-pixel-art-maker-starter/" target="_blank"><i class="fa fa-desktop"></i></a>
-                                    <a href="https://github.com/jarekTerejko/project-pixel-art-maker-starter" target="_blank"><i class="fa fa-code"></i></a>
+                        <div class="col-md-6">
+                            <div class="my-work-container">
+                                <img src="images/jarekterejko.github.io_project-pixel-art-maker-starter_.jpg" alt="projekt" title="projekt" class="my-work">
+                                <div class="overlay">
+                                    <div class="links">
+                                        <p>Finalny projekt Google Developer Challenge Scholarship</p>
+                                        <a href="https://jarekterejko.github.io/project-pixel-art-maker-starter/" target="_blank"><i class="fa fa-desktop"></i></a>
+                                        <a href="https://github.com/jarekTerejko/project-pixel-art-maker-starter" target="_blank"><i class="fa fa-code"></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
     <footer>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    <p>&copy; Jarosław Terejko 2017</p>
+                    <p>&copy; Jarosław Terejko 2018</p>
                     <div class="socials">
                         <ul>
                             <li><a href="https://github.com/jarekTerejko" target="_blank"><i class="fa fa-github" target="_blank" ></i></a></li>
@@ -402,7 +425,6 @@
             </div>
         </div>
     </footer>
-    <script src="js/sliiide.min.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
 </body>
 

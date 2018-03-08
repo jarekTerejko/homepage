@@ -1,59 +1,99 @@
-var settings = {
-    toggle: "#nav-icon", // the selector for the menu toggle, whatever clickable element you want to activate or deactivate the menu. A click listener will be added to this element.
-    exit_selector: ".slider-exit", // the selector for an exit button in the div if needed, when the exit element is clicked the menu will deactivate, suitable for an exit element inside the nav menu or the side bar
-    animation_duration: "0.5s", //how long it takes to slide the menu
-    place: "left", //where is the menu sliding from, possible options are (left | right | top | bottom)
-    animation_curve: "cubic-bezier(0.54, 0.01, 0.57, 1.03)", //animation curve for the sliding animation
-    body_slide: true, //set it to true if you want to use the effect where the entire page slides and not just the div
-    no_scroll: true, //set to true if you want the scrolling disabled while the menu is active
-    auto_close: false //set to true if you want the slider to auto close everytime a child link of it is clicked
-};
+// menu buttons
+const openMenu = document.getElementById('open-menu');
 
-$(document).ready(function () {
-    $('.left-menu').sliiide({
-        place: 'left',
-        toggle: '#nav-icon',
-        exit_selector: '.left-exit',
-        auto_close: true
-    });
+const closeMenu = document.getElementById('close-menu');
 
+// menu
+const leftMenu = document.getElementById('left-menu');
 
-    // Add smooth scrolling to all links
-    $("a").on('click', function (event) {
+// menu links
+const links = document.querySelectorAll('.left-menu a');
 
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-            // Prevent default anchor click behavior
-            event.preventDefault();
-
-            var hash = this.hash;
-
-            // Using jQuery's animate() method to add smooth page scroll
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 1200, function () {
-
-                // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = hash;
-            });
-        } // End if
-    });
-
-
-    $('#contact-btn').click(function () {
-        $('.contact-content').toggle(500);
-    });
+// close menu after click one of nav links
+Array.from(links).forEach(function (item) {
+    item.addEventListener('click', closeSlideMenu);
 });
 
-// When the user scrolls down 200px from the top of the document, show the button
-window.onscroll = function () {
-    scrollFunction()
-};
+// listen for click to show side menu
+openMenu.addEventListener('click', openSlideMenu);
 
-function scrollFunction() {
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-        document.getElementById("top-btn").style.display = "block";
+// listen for click to hide side menu
+closeMenu.addEventListener('click', closeSlideMenu);
+
+
+function openSlideMenu() {
+    leftMenu.style.width = '250px';
+    //  document.getElementById('slide-main').style.marginLeft = '250px';
+}
+
+function closeSlideMenu() {
+    leftMenu.style.width = '0';
+    //    document.getElementById('slide-main').style.marginLeft = '0';
+}
+
+// smooth scroll 
+$('#link-00').click(function () {
+    $.scrollTo($('#start'), 1000);
+});
+
+$('#link-01').click(function () {
+    $.scrollTo($('#about-me'), 1000);
+});
+
+$('#link-02').click(function () {
+    $.scrollTo($('#technology'), 1000);
+});
+
+$('#link-03').click(function () {
+    $.scrollTo($('#portfolio'), 1000);
+});
+
+$('.btn-top').click(function () {
+    $.scrollTo($('#start'), 1000);
+});
+
+// show/hide got to top button
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 500) {
+        $('.btn-top').show();
     } else {
-        document.getElementById("top-btn").style.display = "none";
+        $('.btn-top').hide();
+    }
+});
+
+
+// modal
+const myModal = document.querySelector('#mySimpleModal');
+
+// open modal button
+const openModalBtn = document.querySelector('#contact-btn');
+
+// close modal button
+const closeModalBtn = document.querySelectorAll('.closeBtn');
+
+// listen for click to open modal
+openModalBtn.addEventListener('click', openModal);
+
+// listen for click to close modal
+closeModalBtn[0].addEventListener('click', closeModal);
+
+// listen for click outside modal to close modal 
+window.addEventListener('click', closeModalOutside);
+
+function openModal() {
+    myModal.style.display = 'block';
+}
+
+function closeModal() {
+    myModal.style.display = 'none';
+}
+
+function closeModalOutside(e) {
+    if (e.target == myModal) {
+        myModal.style.display = 'none';
     }
 }
+
+
+
+

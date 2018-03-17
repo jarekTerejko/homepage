@@ -121,7 +121,7 @@ h3 {
 }
 
 .btn-top {
-    display: block;
+    display: none;
     text-decoration: none;
     width: 42px;
     height: 42px;

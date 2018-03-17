@@ -230,6 +230,16 @@ header {
     padding-bottom: 10px;
 }
 
+.my-modal-content h1 {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 30px;
+}
+
+.my-modal-content h3 {
+    font-size: 20px;
+}
+
 .my-modal-content p {
     font-size: 18px;
 }
@@ -245,7 +255,9 @@ header {
 
 .closeBtn {
     color: var(--first-color);
-    float: right;
+    position: absolute;
+    top: 0;
+    right: 5px;
     font-size: 40px;
     cursor: pointer;
     -webkit-transition: .3s ease;
@@ -254,9 +266,7 @@ header {
 
 .closeBtn:hover,
 closeBtn:focus {
-    color: var(--buttons-color);
     text-decoration: none;
-
 }
 
 @-webkit-keyframes slideInContent {

@@ -358,7 +358,7 @@ closeBtn:focus {
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
     display: inline-block;
-    margin-right: 10px;
+    margin: 10px;
     line-height: 40px;
     text-decoration: none;
 }
@@ -389,6 +389,7 @@ closeBtn:focus {
 .contact-button {
     border-radius: 20px;
     border: none;
+    outline: none;
     width: 150px;
     height: 40px;
     line-height: 40px;
